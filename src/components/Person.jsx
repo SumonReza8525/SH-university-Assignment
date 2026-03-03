@@ -1,14 +1,17 @@
 import React from "react";
 
-const Person = ({ person }) => {
+const Person = ({ person, addToPending }) => {
   return (
     <div
-      className="  p-3 space-y-2 rounded-2xl hover:cursor-pointer  
-                  bg-linear-to-br from-cyan-200 to-gray-100 
+      onClick={() => {
+        addToPending(person);
+      }}
+      className={` p-3 space-y-2 rounded-2xl hover:cursor-pointer  
                   
-                  transition-all duration-300 ease-in-out
-                  hover:shadow-2xl hover:-translate-y-2 hover:scale-105
-                  cursor-pointer"
+                  
+                  transition-all duration-200 ease-in-out
+                  hover:shadow-2xl hover:-translate-y-2 hover:scale-105 bg-linear-to-br from-cyan-300 to-gray-300  
+                  cursor-pointer  `}
     >
       <img
         className="rounded-full object-cover w-25 h-25 "

@@ -22,7 +22,17 @@ const App = () => {
   const handleReviewed = () => {
     setType("reviewed");
   };
+  const [isPending, setIsPending] = useState([]);
+  const addToPending = (p) => {
+    setIsPending((prev) => {
+      const exist = prev.find((person) => person.id === p.id);
+      if (exist) return prev;
 
+      return [...prev, p];
+    });
+  };
+
+  // console.log(isPending);
   const [persons, setPersons] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -50,7 +60,7 @@ const App = () => {
     <div className="roboto">
       <Navbar></Navbar>
       <Container>
-        <SubmissionsContainer></SubmissionsContainer>
+        <SubmissionsContainer isPending={isPending}></SubmissionsContainer>
 
         <div className="my-20">
           <AllTypesContainer
@@ -62,9 +72,12 @@ const App = () => {
         </div>
 
         {type === "all" ? (
-          <AllEntries persons={persons}></AllEntries>
+          <AllEntries
+            addToPending={addToPending}
+            persons={persons}
+          ></AllEntries>
         ) : type === "pending" ? (
-          <Pending></Pending>
+          <Pending isPending={isPending}></Pending>
         ) : type === "submitted" ? (
           <Submitted></Submitted>
         ) : type === "reviewed" ? (
@@ -75,6 +88,9 @@ const App = () => {
         <Container>
           <FooterMain></FooterMain>
         </Container>
+        <div className="text-center text-gray-400 p-3 ">
+          © 2026 SH-University. All rights reserved.
+        </div>
       </div>
     </div>
   );

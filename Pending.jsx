@@ -1,9 +1,14 @@
 import React from "react";
-
-const Pending = ({ handlePending }) => {
+import Person from "./src/components/Person";
+const Pending = ({ handlePending, isPending }) => {
   return (
-    <div onClick={handlePending} className="bg-green-600 h-40">
-      Pending
+    <div
+      onClick={handlePending}
+      className=" gap-10 grid grid-cols-1 lg:grid-cols-3"
+    >
+      {isPending.map((person) => (
+        <Person key={person.id} person={person}></Person>
+      ))}
     </div>
   );
 };

@@ -6,7 +6,7 @@ const AllTypesContainer = ({
   handleReviewed,
   handlePending,
 }) => {
-  const [activeAll, setActiveAll] = useState(false);
+  const [activeAll, setActiveAll] = useState(true);
   const [activePending, setActivePending] = useState(false);
   const [activeSubmitted, setActiveSubmitted] = useState(false);
   const [activeReviewed, setActiveReviewed] = useState(false);
