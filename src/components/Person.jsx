@@ -1,0 +1,37 @@
+import React from "react";
+
+const Person = ({ person }) => {
+  return (
+    <div
+      className="  p-3 space-y-2 rounded-2xl hover:cursor-pointer  
+                  bg-linear-to-br from-cyan-200 to-gray-100 
+                  
+                  transition-all duration-300 ease-in-out
+                  hover:shadow-2xl hover:-translate-y-2 hover:scale-105
+                  cursor-pointer"
+    >
+      <img
+        className="rounded-full object-cover w-25 h-25 "
+        src={person.personImage}
+        alt=""
+      />
+      <p className="text-xl font-medium text-purple-400">{person.personName}</p>
+      <div className="flex justify-between items-center">
+        <p className=" font-semibold text-lg">{person.problemTitle}</p>
+        <div className="flex gap-2">
+          <button className="bg-pink-400 px-3 py-1.5 rounded-xl font-semibold">
+            Pending
+          </button>
+          <button
+            className={`rounded-xl font-semibold px-3 py-1.5 ${person.priority === "High" ? "bg-red-200 text-red-800" : person.priority === "Medium" ? "bg-yellow-200 text-yellow-800" : person.priority === "Low" ? "bg-purple-200 text-purple-800" : ""}`}
+          >
+            {person.priority}
+          </button>
+        </div>
+      </div>
+      <p className="text-gray-500">{person.problemShortDefinition}</p>
+    </div>
+  );
+};
+
+export default Person;

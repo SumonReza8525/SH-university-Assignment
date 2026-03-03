@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "personName": "Arif Hasan",
+    "problemTitle": "Laptop Overheating",
+    "problemShortDefinition": "The laptop shuts down automatically after 20 minutes due to excessive heat, making it impossible to attend long coding sessions.",
+    "priority": "High",
+    "personImage": "https://randomuser.me/api/portraits/men/11.jpg"
+  },
+  {
+    "id": 2,
+    "personName": "Nusrat Jahan",
+    "problemTitle": "Low RAM Performance",
+    "problemShortDefinition": "The system has only 4GB RAM, causing the browser and VS Code to freeze during live classes.",
+    "priority": "High",
+    "personImage": "https://randomuser.me/api/portraits/women/12.jpg"
+  },
+  {
+    "id": 3,
+    "personName": "Siam Ahmed",
+    "problemTitle": "Slow Internet Connection",
+    "problemShortDefinition": "Frequent buffering and disconnection during Zoom classes due to unstable internet speed.",
+    "priority": "Medium",
+    "personImage": "https://randomuser.me/api/portraits/men/13.jpg"
+  },
+  {
+    "id": 4,
+    "personName": "Tania Rahman",
+    "problemTitle": "Corrupted Operating System",
+    "problemShortDefinition": "The operating system crashes randomly and sometimes fails to boot properly.",
+    "priority": "High",
+    "personImage": "https://randomuser.me/api/portraits/women/14.jpg"
+  },
+  {
+    "id": 5,
+    "personName": "Rakib Hossain",
+    "problemTitle": "Server Deployment Error",
+    "problemShortDefinition": "Unable to deploy practice projects to the development server due to configuration issues.",
+    "priority": "Medium",
+    "personImage": "https://randomuser.me/api/portraits/men/15.jpg"
+  },
+  {
+    "id": 6,
+    "personName": "Mim Akter",
+    "problemTitle": "Broken Webcam",
+    "problemShortDefinition": "The laptop camera is not working, preventing participation in live interactive sessions.",
+    "priority": "Low",
+    "personImage": "https://randomuser.me/api/portraits/women/16.jpg"
+  },
+  {
+    "id": 7,
+    "personName": "Sabbir Khan",
+    "problemTitle": "Hard Disk Failure",
+    "problemShortDefinition": "Frequent disk errors causing data loss and slow performance while coding.",
+    "priority": "High",
+    "personImage": "https://randomuser.me/api/portraits/men/17.jpg"
+  },
+  {
+    "id": 8,
+    "personName": "Jannat Islam",
+    "problemTitle": "Power Supply Issue",
+    "problemShortDefinition": "Laptop battery drains quickly and charger connection is unstable.",
+    "priority": "Medium",
+    "personImage": "https://randomuser.me/api/portraits/women/18.jpg"
+  },
+  {
+    "id": 9,
+    "personName": "Mahadi Hasan",
+    "problemTitle": "Software Installation Error",
+    "problemShortDefinition": "Unable to install Node.js and other development tools due to system compatibility issues.",
+    "priority": "Medium",
+    "personImage": "https://randomuser.me/api/portraits/men/19.jpg"
+  },
+  {
+    "id": 10,
+    "personName": "Farhana Sultana",
+    "problemTitle": "Microphone Not Working",
+    "problemShortDefinition": "Microphone driver issue prevents speaking during live coding discussions.",
+    "priority": "Low",
+    "personImage": "https://randomuser.me/api/portraits/women/20.jpg"
+  },
+  {
+    "id": 11,
+    "personName": "Imran Chowdhury",
+    "problemTitle": "Outdated Browser Version",
+    "problemShortDefinition": "The browser does not support modern JavaScript features, causing errors during live coding practice.",
+    "priority": "Medium",
+    "personImage": "https://randomuser.me/api/portraits/men/21.jpg"
+  },
+  {
+    "id": 12,
+    "personName": "Shila Akter",
+    "problemTitle": "Cloud Server Timeout",
+    "problemShortDefinition": "The rented cloud server frequently times out while uploading project files, interrupting deployment tasks.",
+    "priority": "High",
+    "personImage": "https://randomuser.me/api/portraits/women/22.jpg"
+  }
+]
