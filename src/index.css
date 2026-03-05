@@ -6,3 +6,15 @@
 .roboto {
   font-family: "Lexend", sans-serif;
 }
+
+.toggle-btn {
+  @apply cursor-pointer 
+         hover:bg-purple-400 
+         hover:text-white 
+         transition-all 
+         duration-300 
+         px-4 
+         py-2 
+         
+         font-bold;
+}

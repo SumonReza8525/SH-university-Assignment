@@ -72,29 +72,6 @@ const Navbar = () => {
             New Assignment
           </button>
         </div>
-
-        {/* <div className="flex justify-between items-center">
-          <div>PH University</div>
-          <div className="flex items-center gap-4">
-            <ul className="flex items-center gap-1.5">
-              <li>
-                <a href=""></a>Home
-              </li>
-              <li>
-                <a href=""></a>Faculty
-              </li>
-              <li>
-                <a href=""></a>Students
-              </li>
-              <li>
-                <a href=""></a>Contact
-              </li>
-            </ul>
-            <button className="bg-purple-500 px-3 py-1.5 rounded-2xl">
-              New Assignment
-            </button>
-          </div>
-        </div> */}
       </Container>
     </div>
   );

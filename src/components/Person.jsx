@@ -11,14 +11,14 @@ const Person = ({ person, addToPending }) => {
                   
                   transition-all duration-200 ease-in-out
                   hover:shadow-2xl hover:-translate-y-2 hover:scale-105 bg-linear-to-br from-cyan-300 to-gray-300  
-                  cursor-pointer  `}
+                  cursor-pointer hover:bg-linear-to-tl hover:from-cyan-500 hover:to-gray-200 `}
     >
       <img
         className="rounded-full object-cover w-25 h-25 "
         src={person.personImage}
         alt=""
       />
-      <p className="text-xl font-medium text-purple-400">{person.personName}</p>
+      <p className="text-xl font-medium text-purple-600">{person.personName}</p>
       <div className="flex justify-between items-center">
         <p className=" font-semibold text-lg">{person.problemTitle}</p>
         <div className="flex gap-2">
@@ -32,7 +32,9 @@ const Person = ({ person, addToPending }) => {
           </button>
         </div>
       </div>
-      <p className="text-gray-500">{person.problemShortDefinition}</p>
+      <p className="hover:text-gray-700 text-gray-500 ">
+        {person.problemShortDefinition}
+      </p>
     </div>
   );
 };

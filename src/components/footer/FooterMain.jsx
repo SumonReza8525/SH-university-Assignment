@@ -6,7 +6,7 @@ import FooterPart4 from "./FooterPart4";
 import FooterPart5 from "./FooterPart5";
 const FooterMain = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-5 gap-25 lg:gap-30 lg:h-100 pt-20  pb-10 pl-3">
+    <div className="grid grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-30 lg:h-100 pt-20   pb-10 ">
       <FooterPrat1></FooterPrat1>
       <FooterPart2></FooterPart2>
       <FooterPart3></FooterPart3>
